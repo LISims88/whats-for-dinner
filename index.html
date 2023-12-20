@@ -1,10 +1,31 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+    <header class="grid-container">
+      <h3>What's for Dinner?</h3>
+      <button class="recipe">ADD A RECIPE</button>
+    </header>
+    <div class="grid-container-2">
+      <div class="recipe-search">
+        <h2>What are you looking for?</h2>
+        <input type="radio" id="Side" name="recipe-type" value="Side">
+        <label for="Side">Side</label><br>
+        <input type="radio" id="Main Dish" name="recipe-type" value="Main Dish">
+        <label for="Main Dish">Main Dish</label><br>
+        <input type="radio" id="Dessert" name="recipe-type" value="Dessert">
+        <label for="Dessert">Dessert</label><br>
+        <input type="radio" id="Entire Meal" name="recipe-type" value="Entire Meal">
+        <label for="Entire Meal">Entire Meal</label><br> 
+        <button class="button">LET'S COOK!</button>
+      </div>
+      <div class="recipe-results">
+        <img src="/Users/lydiasims/mod_1/projects/whats-for-dinner/assets/cookpot.svg" alt="cookpot">
+      </div>
+    </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
