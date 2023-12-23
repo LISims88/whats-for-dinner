@@ -56,8 +56,7 @@ h3, h2, label {
     background-color: #0fb9b1;
     margin-top: 13px;
 }
-
-.recipe-results{
+.recipe-pending{
     border-color: rgba(225, 225, 225, .9);
     background-color: rgba(225, 225, 225, .9);
     width: 230px;
@@ -68,4 +67,22 @@ h3, h2, label {
     padding-bottom: 50px;
     margin-top: 120px;
     margin-bottom: 300px;
+}
+
+.recipe-results {
+    border-color: rgba(225, 225, 225, .9);
+    background-color: rgba(225, 225, 225, .9);
+    width: 230px;
+    height: 232.797;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-top: 75px;
+    padding-bottom: 50px;
+    margin-top: 120px;
+    margin-bottom: 300px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+p {
+    font-size: 18pt;
 }

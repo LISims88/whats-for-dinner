@@ -20,10 +20,16 @@
         <label for="Dessert">Dessert</label><br>
         <input type="radio" id="Entire Meal" name="recipe-type" value="Entire Meal">
         <label for="Entire Meal">Entire Meal</label><br> 
-        <button class="button">LET'S COOK!</button>
+        <button class="button" id="letsCookButton">LET'S COOK!</button>
       </div>
-      <div class="recipe-results">
-        <img src="/Users/lydiasims/mod_1/projects/whats-for-dinner/assets/cookpot.svg" alt="cookpot">
+      <div>
+        <div class="recipe-pending">
+          <img id = "cookingPot"src="/Users/lydiasims/mod_1/projects/whats-for-dinner/assets/cookpot.svg" alt="cookpot">
+        </div>
+        <div class="recipe-results" hidden>
+          <h3>You should make:</h3>
+          <p></p>
+        </div>
       </div>
     </div>
   </body>
