@@ -88,11 +88,26 @@ letsCookButton.addEventListener("click", function() {
     return randomDessert
  }
 
- function getRandomDish(){
-    var randomDish = getRandomSide() || getRandomMain() || getRandomDessert();
-   
+function getRandomDish() {
+    var randomDish;
+
+    if (selectedRecipeType) {
+        switch (selectedRecipeType.value) {
+            case 'Side':
+                randomDish = getRandomSide();
+                break;
+            case 'Main Dish':
+                randomDish = getRandomMain();
+                break;
+            case 'Dessert':
+                randomDish = getRandomDessert();
+                break;  
+
+        }
     recipeResults.querySelector('p').innerText = `${randomDish}`
     
     recipeResults.style.display = 'block'
     recipePending.style.display = 'none'
- }
+    }
+}
+
