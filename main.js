@@ -62,16 +62,22 @@ var desserts = [
 ]
 
 var letsCookButton = document.getElementById("letsCookButton");
-var recipeResults = document.querySelector('.recipe-results')
-var recipePending = document.querySelector('.recipe-pending')
+var recipeResults = document.querySelector('.recipe-results');
+var recipePending = document.querySelector('.recipe-pending');
+var entireMealRadioButton = document.getElementById("Entire Meal");
 var selectedRecipeType;
 
 letsCookButton.addEventListener("click", function() {
     selectedRecipeType = document.querySelector('input[name="recipe-type"]:checked');
     if (selectedRecipeType) {
-        getRandomDish();
+        if (selectedRecipeType.value === 'Entire Meal') {
+            getEntireMeal();
+        } else {
+            getRandomDish();
+        }
     }
-});
+}
+);
 
  function getRandomSide() {
     var randomSide = sides[Math.floor(Math.random() * sides.length)]
@@ -110,4 +116,16 @@ function getRandomDish() {
     recipePending.style.display = 'none'
     }
 }
+
+function getEntireMeal() {
+    var randomSide = getRandomSide();
+    var randomMain = getRandomMain();
+    var randomDessert = getRandomDessert();
+
+    recipeResults.querySelector('p').innerText = `${randomSide} ${randomMain} ${randomDessert}`;
+
+    recipeResults.style.display = 'block';
+    recipePending.style.display = 'none';
+}
+
 
