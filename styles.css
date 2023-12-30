@@ -55,7 +55,7 @@ span{
     padding-left: 75px;
     padding-top: 50px;
     padding-bottom: 50px;
-    margin-left: 160px;
+    margin-left: 137px;
     margin-bottom: 370px;
 }
 
@@ -66,12 +66,12 @@ span{
 .recipe-pending{
     border-color: rgba(225, 225, 225, .9);
     background-color: rgba(225, 225, 225, .9);
-    width: 175px;
+    width: 50%;
     height: 157.797;
     padding-right: 75px;
     padding-left: 75px;
-    padding-top: 75px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 82px;
     margin-top: 120px;
     margin-bottom: 300px;
 }
