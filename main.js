@@ -122,7 +122,7 @@ function getEntireMeal() {
     var randomMain = getRandomMain();
     var randomDessert = getRandomDessert();
 
-    recipeResults.querySelector('p').innerText = `${randomSide} ${randomMain} ${randomDessert}`;
+    recipeResults.querySelector('p').innerText = `${randomSide}, ${randomMain}, ${randomDessert}`;
 
     recipeResults.style.display = 'block';
     recipePending.style.display = 'none';

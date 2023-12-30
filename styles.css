@@ -28,6 +28,12 @@ h3, h2, label {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
 }
+h2 {
+    width: 287px;
+}
+span{
+    color: red;
+}
 .recipe{
     border-color:rgba(225, 225, 225, .9) ;
     border-radius: 4px;
@@ -40,9 +46,9 @@ h3, h2, label {
     justify-content: space-around;
 }
 .recipe-search{
-    border-color: rgba(225, 225, 225, .9) ;
+    border-color: rgba(225, 225, 225, .9);
     background-color: rgba(225, 225, 225, .9);
-    width: 230px;
+    width: 270px;
     height: 232.797;
     margin-top: 120px;
     padding-right: 75px;
@@ -50,8 +56,9 @@ h3, h2, label {
     padding-top: 50px;
     padding-bottom: 50px;
     margin-left: 160px;
-    margin-bottom: 300px;
-    }
+    margin-bottom: 370px;
+}
+
 .button{
     background-color: #0fb9b1;
     margin-top: 13px;
@@ -59,8 +66,8 @@ h3, h2, label {
 .recipe-pending{
     border-color: rgba(225, 225, 225, .9);
     background-color: rgba(225, 225, 225, .9);
-    width: 230px;
-    height: 232.797;
+    width: 175px;
+    height: 157.797;
     padding-right: 75px;
     padding-left: 75px;
     padding-top: 75px;
@@ -68,7 +75,6 @@ h3, h2, label {
     margin-top: 120px;
     margin-bottom: 300px;
 }
-
 .recipe-results {
     border-color: rgba(225, 225, 225, .9);
     background-color: rgba(225, 225, 225, .9);
@@ -76,8 +82,8 @@ h3, h2, label {
     height: 232.797;
     padding-right: 75px;
     padding-left: 75px;
-    padding-top: 75px;
-    padding-bottom: 50px;
+    padding-top: 58px;
+    padding-bottom: 0px;
     margin-top: 120px;
     margin-bottom: 300px;
     font-family: 'Roboto', sans-serif;
